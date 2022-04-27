@@ -37,7 +37,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       title: appConfig.title,
-      // favicon: './public/favicon.ico',
+      favicon: './public/favicon.ico',
     })
   ],
   optimization: {
