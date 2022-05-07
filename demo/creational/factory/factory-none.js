@@ -6,4 +6,5 @@ class Bmw {
   }
 }
 
-const bmwX5 = new Bmw('X5', 108000, 300)
+const bmwX5 = new Bmw('X5', 108000, 300);
+const bmwX6 = new Bmw(type, 111000, 320);
