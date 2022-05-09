@@ -1,3 +1,4 @@
+// 购物车类
 class ShoppingCart {
   constructor() {
     this.discountType = "guest";
@@ -31,4 +32,4 @@ cart.setAmount(100);
 cart.setDiscountType("vvip");
 
 const result = cart.checkout();
-console.log(result);
+console.log(result); // 80

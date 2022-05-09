@@ -28,8 +28,7 @@ class CarServiceDecorator extends CarService {
   }
 }
 
-
-// 附加服务A装饰器
+// 附加服务装饰器
 class AffixDecorator extends CarServiceDecorator {
   constructor(carService) {
     super(carService);
@@ -54,8 +53,8 @@ class DiscountDecorator extends CarServiceDecorator {
 const carWash = new CarWash();
 console.log(carWash.getPrice()); // 8
 
-const carWashAffixA = new AffixDecorator(new CarWash());
-console.log(carWashAffixA.getPrice()); // 14
+const carWashAffix = new AffixDecorator(new CarWash());
+console.log(carWashAffix.getPrice()); // 14
 
-const carWashAffixAB = new DiscountDecorator(new AffixDecorator(new CarWash()));
-console.log(carWashAffixAB.getPrice()); // 12.6
+const carWashDiscount = new DiscountDecorator(new AffixDecorator(new CarWash()));
+console.log(carWashDiscount.getPrice()); // 12.6

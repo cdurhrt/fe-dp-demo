@@ -1,3 +1,4 @@
+// 购物车类
 class ShoppingCart {
   constructor(discount) {
     this.discount = discount;
